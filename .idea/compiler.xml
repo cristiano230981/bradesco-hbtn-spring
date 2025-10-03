@@ -7,12 +7,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="demo" />
+        <module name="catalogo-produtos" />
         <module name="usuario-api" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="catalogo-produtos" options="-parameters" />
       <module name="demo" options="-parameters" />
       <module name="usuario-api" options="-parameters" />
     </option>
